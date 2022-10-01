@@ -1,0 +1,48 @@
+center img{
+  padding-top:12%;
+}
+
+center span{
+  display: block;
+  margin-bottom: 5%;
+  color:greenyellow;
+  font-size: 1.5rem;
+}
+
+.join-build-learn{
+  color:#14BA86;
+}
+
+.desc span{
+  font-size: 2rem;
+  display: inline-block;
+  margin:0;
+}
+
+.desc{
+  padding:0% 10%;
+  font-size: 1.75rem;
+  color:#93C5FD;
+  font-weight: 700;
+}
+#particles-js{
+  position: fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index:-9999;
+}
+
+.register-btn{
+  text-decoration: none;
+  padding: 8px 20px;
+  background: rgb(59, 59, 241);
+  color:white;
+  font-size: 1.5rem;
+  border:none;
+  border-radius: 5px;
+}
+.register-btn:hover{
+  background:#888;
+}

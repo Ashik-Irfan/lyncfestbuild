@@ -1,0 +1,73 @@
+@media (max-width:450px){
+  .contact-card img{
+    width:12%;
+  }
+  .footer{
+    padding:30% 0;
+    flex-direction: column;
+  }
+  
+}
+.footer a{
+  color:#000;
+  text-decoration: none;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  background:#858585;
+}
+.contact-card{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  padding:2%;
+  margin-bottom:10%
+}
+.mail{
+  display: flex;
+  align-items: center;
+}
+.profile div{
+  display: flex;
+  align-items: center;
+}
+.location-card{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:2%;
+  margin-bottom:10%
+}
+.map{
+  height:300px;
+  width:auto;
+}
+.address{
+  text-align: center;
+}
+.address span{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.lync{
+  display: flex;
+  flex-direction: column;
+}
+.social-handles{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-handles img{
+  width:50px;
+}
+.sairam img{
+  width:50px;
+}
+.sairam{
+  display:flex;
+  justify-content: space-between;
+}
