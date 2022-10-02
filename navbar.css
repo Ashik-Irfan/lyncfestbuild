@@ -9,7 +9,6 @@
   padding-right:2%;
   z-index:12;
   backdrop-filter: blur(4px) saturate(180%);
-  /* -webkit-backdrop-filter: blur(16px) saturate(180%); */
   background-color: rgba(0, 0, 0, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -39,8 +38,6 @@ logo{
 
 .navbar-links li {
   list-style: none;
-  /*margin-right:10px;
-  border-radius: 50px; */
   font-size: 1.2rem;
   transition: background-color 0.3s;
   transition: transform 0.3s;
@@ -57,11 +54,11 @@ logo{
 }
 
 .navbar-links-style:hover {
-  background-color: #f00;
+  background-color:#FF2400;
   transform: scale(1.1);
 }
 .ghost-btn{
-  background: #f00;
+  background: #FF2400;
 }
 .ghost-btn:hover{
   outline: 1px solid #f00;
@@ -124,4 +121,19 @@ logo{
     transform: scale(0.9);
     transition:transform 0.3s;
   }
+}
+.top{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom:2%;
+  right:2%;
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  color:#000;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color:rgb(205, 93, 93);
 }
