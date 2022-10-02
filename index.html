@@ -15,32 +15,40 @@
 </head>
 <body id="hackathon">
   <div id="particles-js"></div>
-  <nav class="navbar">
-    <logo>
-      <img class="logo" src="src/HackInHub-Logo1.png"/>
-      <div class="brand-title"><a href="#">Hack In Hub</a></div>
-    </logo>
-    <a class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-      <ul>
-        <li><a class="navbar-links-style" href="https://rookieprogrammersachin.github.io/lyncfest2022">Lyncfest</a></li>
-        <li><a class="navbar-links-style" href="index.html#schedule">Schedule</a></li>
-        <li><a class="navbar-links-style" href="guidelines.html">Guidelines</a></li>
-        <li><a class="navbar-links-style" href="index.html#domains">Problem Statements</a></li>
-        <li><a class="ghost-btn" href="#">Register</a></li>
-      </ul>
+  <nav class="header-nav">
+    <div class="branding">
+        <a href="index.html"><img src="src/HackInHub-Logo1.png" alt=""></a>
+        <h1 class="brand-name">Hack In Hub</h1>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="https://rookieprogrammersachin.github.io/lyncfest2022" class="nav-btn">LyncFest</a>
+        <a href="#schedule" class="nav-btn">Schedule</a>
+        <a href="#domains" class="nav-btn">Problem Statements</a>
+        <a href="guidelines.html" class="nav-btn">Guidelines</a>
+        <a href="#events" class="nav-btn ghost-btn">Register</a>
     </div>
   </nav>
+
+  <div class="nav-buttons-mobile hidden-nav">
+    <a href="https://rookieprogrammersachin.github.io/lyncfest2022" class="nav-btn">LyncFest</a>
+    <a href="#schedule" class="nav-btn">Schedule</a>
+    <a href="#domains" class="nav-btn">Problem Statements</a>
+    <a href="guidelines.html" class="nav-btn">Guidelines</a>
+    <a href="#events" class="nav-btn ghost-btn">Register</a>
+  </div>
+
+  <div class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+  </div>
   <center>
     <img src="src/HackInHub-Logo1.png"/>
     <h1 class="join-build-learn">Join ~ Build ~ Learn</h1>
     <p class="desc">Bring-out your hidden tech genius in this <span>24</span> hours hackathon by solving difficult problems faced by the public.</p>
     <br>
-    <a href="https://www.google.com" class="register-btn">Register</a>
+    <a href="https://www.google.com" class="page-button">Register</a>
     <div id="schedule"></div>
   </center>
   <br>
@@ -125,18 +133,21 @@
         <div id="AI & ML" class="prevLeftSecond">
           <a href="https://www.google.com/1">
             <img class="domain-card" src="src/Artificial intelligence-amico.svg">
+            <br>
             <span>AI & ML</span>
           </a>
         </div>
         <div id="MOBILE & WEB DEVELOPMENT" class="prev">
           <a href="https://www.google.com/2">
             <img class="domain-card" src="src/App development-amico.svg">
+            <br>
             <span>MOBILE & WEB DEVELOPMENT</span>
           </a>
         </div>
         <div id="AR & VR" class="selected">
           <a href="https://www.google.com/3">
             <img class="domain-card" src="src/Virtual reality-amico.svg">
+            <br>
             <span>AR & VR</span>
           </a>
           
@@ -144,12 +155,14 @@
         <div id="IoT" class="next">
           <a href="https://www.google.com/4">
             <img class="domain-card" src="src/Printed circuit board-amico.svg">
+            <br>
             <span>IoT</span>
           </a>
         </div>
         <div id="BLOCKCHAIN & CYBERSECURITY" class="nextRightSecond">
           <a href="https://www.google.com/5">
             <img class="domain-card" src="src/Bitcoin P2P-amico.svg">
+            <br>
             <span>BLOCKCHAIN & CYBERSECURITY</span>
           </a>
         </div>
@@ -161,57 +174,32 @@
     </div>
 
   </main>
-  <!-- <domains>
-    <h1 class="sub-title">Domains</h1>
-    <div class="domains">
-      <div class="domain-card">
-        <img class="domain-img" src=""/>
-        <div class="domain-name">IOT</div>
-      </div>
-      <div class="domain-card">
-        <img class="domain-img" src="src/Artificial intelligence-amico.svg"/>
-        <div class="domain-name">AI & ML</div>
-      </div>
-      <div class="domain-card">
-        <img class="domain-img" src=""/>
-        <div class="domain-name">MOBILE AND APP DEVELOPMENT</div>
-      </div>
-      <div class="domain-card">
-        <img class="domain-img" src=""/>
-        <div class="domain-name">AR & VR</div>
-      </div>
-      <div class="domain-card">
-        <img class="domain-img" src=""/>
-        <div class="domain-name">BLOCKCHAIN & CYBERSECURITY</div>
-      </div>
-    </div>
-  </domains> -->
   <sponsors>
     <h1 class="sub-title">Sponsors</h1>
     <br>
     <br>
     <div class="sponsors">
-      <div class="sponsor-card">
+      <div data-aos="zoom-in" class="sponsor-card">
         <a href="https://fresatechnologies.com/" target="blank">
           <img class="sponsor-logo" src="src/sponsors/fresa.png" />
         </a>
       </div>
-      <div class="sponsor-card">
+      <div data-aos="zoom-in" class="sponsor-card">
         <a href="https://tagros.com/" target="blank" >
           <img class="sponsor-logo" src="src/sponsors/tagros.png" />
         </a>
       </div>
-      <div class="sponsor-card">
+      <div data-aos="zoom-in" class="sponsor-card">
         <a href="https://sirsubinfotech.com/" target="blank" >
           <img class="sponsor-logo" src="src/sponsors/sirsub.png" />
         </a>
       </div>
-      <div class="sponsor-card">
+      <div data-aos="zoom-in" class="sponsor-card">
         <a href="https://www.hopelearning.net/" target="blank" >
           <img class="sponsor-logo" src="src/sponsors/hope.png" />
         </a>
       </div>
-      <div class="sponsor-card">
+      <div data-aos="zoom-in" class="sponsor-card">
         <a href="#" target="blank">
           <img class="sponsor-logo" src="src/sponsors/BOSSE.png" />
         </a>
@@ -255,6 +243,7 @@
       <div>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62210.801033170384!2d79.98319465820313!3d12.960647099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f51f638ddfbb%3A0xf3aef7ec7c8979ba!2sSri%20Sairam%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1664645478525!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+      <br>
       <div class="address">
         <span>Sri Sai Ram Institute of Technology</span>
         <p>Sai Leo Nagar, West Tambaram,</p>
