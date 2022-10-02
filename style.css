@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
 * {
   /* outline:1px solid lime; */
   box-sizing: border-box;
@@ -11,7 +12,7 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background: rgb(154, 42, 42);
+  background: #FF3131;
 }
 a{
   text-decoration: none;
@@ -20,7 +21,7 @@ a{
 body {
   margin: 0;
   padding: 0; 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #000;
   overflow-x: hidden;
 
@@ -29,13 +30,14 @@ p{
   margin:3%;
 }
 @media (max-width:450px) {
-    body {
-        overflow-x: hidden!important;
-    }
+  body {
+      overflow-x: hidden!important;
+  }
   img{
     width:100%;
   }
   .sponsors{
+    align-items: center;
     flex-direction: column;
   }
   .phase{
@@ -50,7 +52,7 @@ p{
   
 }
 schedule, sponsors{
-  margin-top:10%;
+  margin:12% 0;
   text-align:center;
   display: flex;
   flex-direction: column;
@@ -60,7 +62,8 @@ schedule, sponsors{
 .sub-title{
   margin-top:5%;
   text-align: center;
-  color:#888;
+  color:#bdbdbd;
+  font-family: 'Montserrat', sans-serif;
 }
 .phase,.phase-2,.phase-4{
   display:flex;
@@ -76,9 +79,10 @@ schedule, sponsors{
   width:100%;
 } */
 .phase-id{
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2rem;
   color:#A78BFA;
+  font-family: 'Montserrat', sans-serif;
 }
 .phase-name{
   font-size: 1.7rem;
@@ -98,23 +102,24 @@ schedule, sponsors{
   color:#888;
 }
 .sponsors{
+  width:100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap:wrap;
-  gap:1%;
+  gap:0% 5%;
 }
 .sponsor-card{
   display: flex;
   align-items: center;
   justify-content: center;
-  height:250px;
-  width:250px;
+  height:200px;
+  width:200px;
   border-radius:10px;
   margin-bottom:6%;
-  background:rgb(29,29,29);
   outline: 1px solid white;
-    box-shadow: 0 0 10px red;
-  transition: scale 0.3s;
+  box-shadow: 0 0 10px red;
+  background-color: rgb(29,29,29,0.5);
+  transition: transform 0.3s;
 }
 .sponsor-card:hover{
   transform: scale(1.1);
