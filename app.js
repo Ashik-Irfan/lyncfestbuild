@@ -118,3 +118,10 @@ particlesJS('particles-js',
   }
 
 );
+
+if(window.innerWidth < 800){
+  const domainCards = document.querySelectorAll('.domain-card');
+  domainCards.forEach((domainCard)=> {
+    domainCard.setAttribute('data-aos','zoom-out');
+  });
+}
