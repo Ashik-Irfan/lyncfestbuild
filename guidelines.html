@@ -6,56 +6,71 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="src/favicon.jpg"/>
     <link href="navbar.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="particles.css" rel="stylesheet"/>
     <style>
-      ::-webkit-scrollbar {
-          width: 7px;
-        }
-      body{
-        margin:0;
-        padding:0;
-        font-family: sans-serif;
-        background: #000;
-      }
-      a{
-        color:#fff;
-        text-decoration: none;
-      }
       .content{
-        position: absolute;
-        top:10%;
         font-size: 1.5rem;
         color:#888;
         padding:10%;
+        width:80%;
+        margin:auto;
+        margin-top: 10%;
+        margin-bottom:5%;
+        border-radius: 20px;
+        backdrop-filter: blur(2px) saturate(180%);
+        -webkit-backdrop-filter: blur(2px) saturate(180%);
+        background-color: rgba(0, 0, 0, 0.5); 
+        border: 1px solid rgba(255, 255, 255, 0.125);
+      }
+      #particles-js{
+      position: fixed;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      z-index:-9999;
       }
       center{
         font-size: 2rem;
+        color:#fff;
       }
-      .navbar-links{
-        margin-right:2%;
+      @media (max-width:800px) {
+        .content{
+          font-size: 1rem;
+          margin-top: 35%;
+        }
       }
     </style>
   </head>
   <body>
-    <nav class="navbar">
-      <logo>
-        <img class="logo" src="src/HackInHub-Logo1.png"/>
-        <div class="brand-title"><a href="index.html">Hack In Hub</a></div>
-      </logo>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a class="navbar-links-style" href="https://www.lyncfest.tech">Lyncfest</a></li>
-          <li><a class="navbar-links-style" href="index.html#schedule">Schedule</a></li>
-          <li><a class="navbar-links-style" href="#">Guidelines</a></li>
-          <li><a class="navbar-links-style" href="index.html#domains">Problem Statements</a></li>
-          <li><a class="ghost-btn" href="#">Register</a></li>
-        </ul>
+    <div id="particles-js"></div>
+    <nav class="header-nav">
+      <div class="branding">
+          <a href="index.html"><img src="src/HackInHub-Logo1.png" alt=""></a>
+          <h1 class="brand-name">Lync Fest 2022</h1>
+      </div>
+  
+      <div class="nav-buttons">
+          <a href="index.html" class="nav-btn">Hack In Hub</a>
+          <a href="index.html#schedule" class="nav-btn">Schedule</a>
+          <a href="index.html#domains" class="nav-btn">Problem Statements</a>
+          <a href="https://rookieprogrammersachin/lyncfest2022" class="nav-btn">LyncFest</a>
+          <a href="#" class="nav-btn ghost-btn">Register</a>
       </div>
     </nav>
+    <div class="nav-buttons-mobile hidden-nav">
+      <a href="index.html" class="nav-btn">Hack In Hub</a>
+      <a href="index.html#schedule" class="nav-btn">Schedule</a>
+      <a href="index.html#domains" class="nav-btn">Problem Statements</a>
+      <a href="https://rookieprogrammersachin/lyncfest2022" class="nav-btn">LyncFest</a>
+      <a href="#" class="nav-btn ghost-btn">Register</a>
+    </div>
+    <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
     <div class="content">
       <center><b>GUIDELINES</b></center>
       <p>1. It is a 24 hour OFFLINE Hackathon.</p>
@@ -72,5 +87,7 @@
     </div>
     <a href="#" class="top">↑</a>
     <script src="navbar.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
