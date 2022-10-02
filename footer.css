@@ -6,30 +6,39 @@
     padding:30% 0;
     flex-direction: column;
   }
-  
+  .contact-card,.location-card{
+    margin-bottom:10%;
+  }
+
 }
 .footer a{
-  color:#000;
+  color:#fff;
   text-decoration: none;
 }
 .footer{
+  color:#fff;
   display: flex;
   justify-content: space-around;
   align-items:center;
-  background:#858585;
+  background:#1E293B;
 }
 .contact-card{
   display:flex;
+  background: #111827;
   flex-direction: column;
   justify-content:center;
   padding:2%;
-  margin-bottom:10%
+  border-radius: 5%;
 }
 .mail{
   display: flex;
   align-items: center;
 }
+.profile a{
+  color:#888;
+}
 .profile div{
+  color:#888;
   display: flex;
   align-items: center;
 }
@@ -39,7 +48,7 @@
   justify-content: center;
   align-items: center;
   padding:2%;
-  margin-bottom:10%
+  
 }
 .map{
   height:300px;
