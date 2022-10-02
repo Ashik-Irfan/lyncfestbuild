@@ -13,24 +13,24 @@
   <link href="domain.css" rel="stylesheet"/>
   <link href="footer.css" rel="stylesheet"/>
 </head>
-<body>
+<body id="hackathon">
   <div id="particles-js"></div>
   <nav class="navbar">
     <logo>
       <img class="logo" src="src/HackInHub-Logo1.png"/>
-      <div class="brand-title">Hack In Hub</div>
+      <div class="brand-title"><a href="#">Hack In Hub</a></div>
     </logo>
-    <a href="#" class="toggle-button">
+    <a class="toggle-button">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </a>
     <div class="navbar-links">
       <ul>
-        <li><a class="navbar-links-style" href="https://www.lyncfest.tech">Lyncfest</a></li>
-        <li><a class="navbar-links-style" href="#">Schedule</a></li>
-        <li><a class="navbar-links-style" href="#">Guidelines</a></li>
-        <li><a class="navbar-links-style" href="#">Problem Statements</a></li>
+        <li><a class="navbar-links-style" href="https://rookieprogrammersachin.github.io/lyncfest2022">Lyncfest</a></li>
+        <li><a class="navbar-links-style" href="index.html#schedule">Schedule</a></li>
+        <li><a class="navbar-links-style" href="guidelines.html">Guidelines</a></li>
+        <li><a class="navbar-links-style" href="index.html#domains">Problem Statements</a></li>
         <li><a class="ghost-btn" href="#">Register</a></li>
       </ul>
     </div>
@@ -41,6 +41,7 @@
     <p class="desc">Bring-out your hidden tech genius in this <span>24</span> hours hackathon by solving difficult problems faced by the public.</p>
     <br>
     <a href="https://www.google.com" class="register-btn">Register</a>
+    <div id="schedule"></div>
   </center>
   <br>
   <br>
@@ -58,7 +59,8 @@
       <div class="phase-text">
         <p class="phase-id">PHASE 2</p>
         <p class="phase-name">Idea Submission</p>
-        <p class="phase-deadline">Opens: 25th Sept 2022</p>
+        <p class="phase-deadline">Closes: 10th Oct 2022</p>
+        <p class="phase-deadline">shortlisted team announcement: 12th Oct 2022</p>
       </div>
       <img class="phase-img" src="src/Idea-submission.svg" />
     </div>
@@ -67,14 +69,14 @@
       <div class="phase-text">
         <p class="phase-id">PHASE 3</p>
         <p class="phase-name">Hackathon</p>
-        <p class="phase-deadline">Opens: 25th Sept 2022</p>
+        <p class="phase-deadline">19 & 20 Oct 2022</p>
       </div>
     </div>
     <div data-aos="fade-left" data-aos-delay="300" data-aos-duration="600" class="phase-4">
       <div class="phase-text">
         <p class="phase-id">PHASE 4</p>
         <p class="phase-name">Evaluation</p>
-        <p class="phase-deadline">Opens: 25th Sept 2022</p>
+        <p class="phase-deadline">wil be updated soon</p>
       </div>
         <img class="phase-img" src="src/evaluation.svg" />
     </div>
@@ -83,8 +85,9 @@
       <div class="phase-text">
         <p class="phase-id">PHASE 5</p>
         <p class="phase-name">Results</p>
-        <p class="phase-deadline">Opens: 25th Sept 2022</p>
+        <p class="phase-deadline">will be updated soon</p>
       </div>
+      <div id="domains"></div>
     </div>
     <!-- <div class="phase">
       <img class="phase-img" src="" />
@@ -113,39 +116,39 @@
   </schedule>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <h1 class="sub-title">Domains</h1>
-  <main>
+  <main id="domains">
     <div class="button1">
-      <button id="prev"><img src="src/icons8-back-arrow-50.png"/> </button>
+      <button id="prev"><img src="src/icons8-back-arrow-50.png"/></button>
     </div>
     <div class="carousel-container">
       <div id="carousel">
         <div id="AI & ML" class="prevLeftSecond">
-          <a href="https://www.google.com/">
+          <a href="https://www.google.com/1">
             <img class="domain-card" src="src/Artificial intelligence-amico.svg">
             <span>AI & ML</span>
           </a>
         </div>
         <div id="MOBILE & WEB DEVELOPMENT" class="prev">
-          <a href="https://www.google.com">
+          <a href="https://www.google.com/2">
             <img class="domain-card" src="src/App development-amico.svg">
             <span>MOBILE & WEB DEVELOPMENT</span>
           </a>
         </div>
         <div id="AR & VR" class="selected">
-          <a href="https://www.google.com">
+          <a href="https://www.google.com/3">
             <img class="domain-card" src="src/Virtual reality-amico.svg">
             <span>AR & VR</span>
           </a>
           
         </div>
         <div id="IoT" class="next">
-          <a href="https://www.google.com">
+          <a href="https://www.google.com/4">
             <img class="domain-card" src="src/Printed circuit board-amico.svg">
             <span>IoT</span>
           </a>
         </div>
         <div id="BLOCKCHAIN & CYBERSECURITY" class="nextRightSecond">
-          <a href="https://www.google.com">
+          <a href="https://www.google.com/5">
             <img class="domain-card" src="src/Bitcoin P2P-amico.svg">
             <span>BLOCKCHAIN & CYBERSECURITY</span>
           </a>
@@ -219,22 +222,11 @@
   <br>
   <div class="footer">
     <div class="contact-card">
-      <center>Contact</center>
+      <center><b>CONTACT</b></center>
       <br>
       <div class="mail">
         <img src="src/mail.png"/>
         <a href="mailto:lyncfest@sairamit.edu.in">lyncfest@sairamit.edu.in</a>
-      </div>
-      <br>
-      <div class="profile">
-        <div>
-          <img src="src/person.png"/>
-          Aishu
-        </div>
-        <div>
-          <img src="src/phone.png"/>
-          <a href="tel:+919043886601">9043886601</a>
-        </div>
       </div>
       <br>
       <div class="profile">
@@ -245,6 +237,17 @@
         <div>
           <img src="src/phone.png"/>
           <a href="tel:+919043886601">9043886601</a>
+        </div>
+      </div>
+      <br>
+      <div class="profile">
+        <div>
+          <img src="src/person.png"/>
+          Sri Vinayaga Barathan
+        </div>
+        <div>
+          <img src="src/phone.png"/>
+          <a href="tel:+919245172470">9245172470</a>
         </div>
       </div> 
     </div>
@@ -261,16 +264,19 @@
     <div class="social-handles">
       <div class="lync">
         LyncFest
-        <a href="https://www.instagram.com/lyncfest22"><img src="src/instagram.png"/></a>
+        <br>
+        <a target="_blank" href="https://www.instagram.com/lyncfest22"><img src="src/instagram.png"/></a>
       </div>
-      SairamIT
+      IT Dept ~ SIT
+      <br>
       <div class="sairam">
-        <a href="https://www.instagram.com/"><img src="src/instagram.png"/></a>
-        <a href="https://www.facebook.com"><img src="src/facebook.png"/></a>
-        <a href="https://www.linkedin.com"><img src="src/linkedin.png"/></a>
+        <a target="_blank" href="https://www.instagram.com/sairamit_it/"><img src="src/instagram.png"/></a>
+        <a target="_blank" href="https://www.facebook.com/sairamitit/videos/315808929880804/?extid=NS-UNK-UNK-UNK-IOS_GK0T-GK1C"><img src="src/facebook.png"/></a>
+        <a target="_blank" href="https://www.linkedin.com/posts/sairamit-information-technology_technoholix-activity-6859120428582076416-6hL"><img src="src/linkedin.png"/></a>
       </div>
     </div>
   </div>
+  <a href="#" class="top">↑</a>
   <script src="domain.js"></script>
   <script src="navbar.js"></script>
   <script src="particles.js"></script>
