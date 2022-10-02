@@ -19,7 +19,7 @@
     height: 400px;
     top: 50%;
     transform: translateY(-50%);
-    overflow: hidden; 
+
   }
   #carousel div {
     position: absolute;
@@ -28,7 +28,7 @@
   }
   .domain-card{
     background:#fff;
-    border-radius: 50px;
+    border-radius: 30px;
     width: 400px;
     transition: width 0.3s; 
   }
@@ -93,8 +93,8 @@
     align-items: center;
     border:none;
   }
-  .button1{
-    justify-content: end;
+  .button1,.button2{
+    justify-content: center;
   }
   #prev,#next{
     background: #000;
