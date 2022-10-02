@@ -5,12 +5,12 @@ center img{
 center span{
   display: block;
   margin-bottom: 5%;
-  color:greenyellow;
+  color:#e53935;
   font-size: 1.5rem;
 }
 
 .join-build-learn{
-  color:#14BA86;
+  color:#e53935;
 }
 
 .desc span{
@@ -22,7 +22,7 @@ center span{
 .desc{
   padding:0% 10%;
   font-size: 1.75rem;
-  color:#93C5FD;
+  color:#e8dede;
   font-weight: 700;
 }
 #particles-js{
@@ -33,16 +33,22 @@ center span{
   width:100%;
   z-index:-9999;
 }
-
-.register-btn{
+.page-button{
+  font-size: 1.4rem;
+  color: #eeeeee;
+  transition: background-color 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
-  padding: 8px 20px;
-  background: rgb(59, 59, 241);
-  color:white;
-  font-size: 1.5rem;
-  border:none;
-  border-radius: 5px;
+  padding: .75rem 1.25rem;
+  border-radius: 12px;
+  outline: 1px solid #FF3131;
+  /* margin-top: 20px; */
+  /* margin-bottom: 70px; */
 }
-.register-btn:hover{
-  background:#888;
+
+.page-button:hover{
+  color: white;
+  background-color: #FF3131;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #FF3131;
 }
