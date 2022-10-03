@@ -125,3 +125,33 @@ if(window.innerWidth < 800){
     domainCard.setAttribute('data-aos','zoom-out');
   });
 }
+const glitchImage = document.querySelector('.glitch')
+PowerGlitch.glitch(glitchImage)
+PowerGlitch.glitch(
+  '.glitch',
+  {
+      playMode: 'always',
+      hideOverflow: true,
+      timing: {
+          duration: 800,
+          iterations: 5,
+          easing: 'ease-in-out',
+      },
+      glitchTimeSpan: {
+          start: 0.4,
+          end: 0.7,
+      },
+      shake: {
+          velocity: 1,
+          amplitudeX: 0.4,
+          amplitudeY: 0.2,
+      },
+      slice: {
+          count: 5,
+          velocity: 10,
+          minHeight: 0.02,
+          maxHeight: 0.40,
+          hueRotate: true,
+      },
+  }
+)
