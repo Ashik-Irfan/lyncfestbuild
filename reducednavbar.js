@@ -14,7 +14,7 @@ function scrollFunction() {
     document.querySelector(".header-nav img").style.width = "80px";
     document.querySelector(".header-nav .brand-name").style.fontSize = "1.3rem";
     document.querySelectorAll(".header-nav .nav-buttons .nav-btn").forEach((btn)=>{btn.style.fontSize = "1.2rem"});
-    document.querySelector(".hamburger").style.top = "3.3%";
+    document.querySelector(".hamburger").style.top = "5%";
     document.querySelector(".top").classList.add('show-top');
   } else {
     document.querySelector(".header-nav img").style.width = "100px";
